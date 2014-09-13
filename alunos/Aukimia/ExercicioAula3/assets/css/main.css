@@ -1,0 +1,19 @@
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1{
+	font-size: 20px;
+}
+h2 {font-weight: bold;}
+#container {width: 800px;}
+.noticia {
+	border-top: 1px solid #000;
+	border-radius: 10px;
+	width: 600px;
+	margin:20px;
+	padding:20px;
+	display: block;
+	}
+.texto p{font-size: 0.1em;
+	transition:  font-size 2s;
+	-moz-transition: font-size 2s;
+	-webkit-transition: font-size 2s;}
+.texto p:hover {font-size: 1.0em}
