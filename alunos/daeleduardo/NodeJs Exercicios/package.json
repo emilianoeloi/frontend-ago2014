@@ -1,0 +1,19 @@
+{
+  "name": "MyNodeJs",
+  "version": "0.0.1",
+  "description": "Front End",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Eduardo",
+  "license": "BSD",
+  "keywords": [
+    "JSON",
+    "Node",
+    "JS"
+  ],
+  "dependencies": {
+    "express": "^4.9.0"
+  }
+}
