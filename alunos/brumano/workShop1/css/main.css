@@ -1,0 +1,117 @@
+html, body {height:100%;}
+
+body
+{
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+h1
+{
+	font-size:86px;
+	color:#c77966;
+}
+.fl
+{ display:block; float:left}
+.fr
+{ display:block; float:right}
+#pagina
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#topo
+{
+	height:236px;
+}
+#topo-titulo, #topo-busca
+{
+	margin:0px 20px 27px 20px;
+}
+#topo-titulo
+{
+	margin-top:105px;
+}
+#topo-busca
+{
+	margin-top:149px;
+}
+#topo-busca-caixa 
+{
+	height: 40px;
+	padding-left: 16px;
+	border: solid 3px;
+	border-color:#703030;
+	color: #c77966;
+}
+#menu
+{
+	height:40px;
+	width: 960px;
+	float:left;
+	background: #e3cda4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e3cda4 0%, #c6a687 50%, #733533 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3cda4), color-stop(50%,#c6a687), color-stop(100%,#733533)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e3cda4 0%,#c6a687 50%,#733533 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e3cda4 0%,#c6a687 50%,#733533 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e3cda4 0%,#c6a687 50%,#733533 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e3cda4 0%,#c6a687 50%,#733533 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3cda4', endColorstr='#733533',GradientType=0 ); /* IE6-9 */
+
+}
+
+#menu-ul
+{
+	margin-left: 20px;
+	margin-top: 8px;
+}
+
+.menu-lista
+{
+	display:block;
+	float:left;
+}
+.bot-menu-separator, .bot-menu-item, #menu ul li a
+{
+	color:#FFFFFF;
+	font-size:18px;
+	text-decoration:none;
+	
+}
+.bot-menu-item:hover
+{
+	color:#000;
+	text-decoration:overline;
+}
+.bot-menu-separator
+{
+	margin:0 10px;
+}
+
+#conteudo
+{}
+.box-conteudo
+{
+	width: 300px;
+	float: left;
+	margin: 20px;
+}
+.box-conteudo-img
+{
+	width: 240px;
+}
+.box-conteudo-item{}
+.box-conteudo-item-titulo
+{
+	color:#603913;
+	font-size:24px;
+	font-weight:bold;
+}
+.box-conteudo-item-text
+{
+	color:#603913;
+	font-size:18px;
+	margin-top:14px;
+}
+.box-conteudo-item-img{}

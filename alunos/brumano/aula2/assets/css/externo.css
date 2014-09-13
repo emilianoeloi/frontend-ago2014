@@ -1,0 +1,12 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	background: black;
+
+}
+p, h1, h2
+{
+
+	color: white;
+	font-size: 12px;
+}
