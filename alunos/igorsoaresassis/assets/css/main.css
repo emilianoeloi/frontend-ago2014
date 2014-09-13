@@ -1,0 +1,38 @@
+.nome{
+	color: blue;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.titulo-minicurriculo{
+	margin:10px;
+	text-transform: uppercase;
+}
+#foto{
+	margin-left: 10px;
+	text-align: center;
+	width: 100%;
+}
+.texto_minicurriculo{
+	margin:10px;
+}
+.gosto,.gosto a{
+	margin:5px;
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+	list-style: none;
+}
+.caixa, .caixa2, .caixa3{
+	width: 100px;
+	height: 100px;
+}
+.caixa{
+	background: red;
+}
+.caixa2{
+	background: blue;
+}
+
+.caixa3{
+	background: yellow;
+}
