@@ -1,0 +1,30 @@
+
+
+h1{
+
+	font-family: 'Oswald', sans-serif;
+
+}
+
+#texto{
+	
+	font-size:0.1em;
+	width:500px;
+	height: auto;
+	margin-bottom: 40px;
+	margin-left: 60px;
+	
+	transition:width: 100deg;
+	-webkit-transition:width(100deg);
+
+}
+
+#texto:hover{
+	font-size: 1.0em;
+}
+
+#img{
+	margin-left: 150px;
+	margin-bottom: 10px;
+}
+

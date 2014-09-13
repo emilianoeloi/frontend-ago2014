@@ -1,38 +1,70 @@
+@font-face {
+    font-family: 'resident_evilregular';
+    src: url('../fonts/resident_evil_large.eot');
+    src: url('../fonts/resident_evil_large.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/resident_evil_large.woff2') format('woff2'),
+         url('../fonts/resident_evil_large.woff') format('woff'),
+         url('../fonts/resident_evil_large.ttf') format('truetype'),
+         url('../fonts/resident_evil_large.svg#resident_evilregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	background: #959595; /* Old browsers */
+	background: -moz-linear-gradient(top,  #959595 0%, #010101 33%, #010101 33%, #0d0d0d 46%, #0a0a0a 61%, #4e4e4e 81%, #383838 87%, #1b1b1b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#959595), color-stop(33%,#010101), color-stop(33%,#010101), color-stop(46%,#0d0d0d), color-stop(61%,#0a0a0a), color-stop(81%,#4e4e4e), color-stop(87%,#383838), color-stop(100%,#1b1b1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #959595 0%,#010101 33%,#010101 33%,#0d0d0d 46%,#0a0a0a 61%,#4e4e4e 81%,#383838 87%,#1b1b1b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #959595 0%,#010101 33%,#010101 33%,#0d0d0d 46%,#0a0a0a 61%,#4e4e4e 81%,#383838 87%,#1b1b1b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #959595 0%,#010101 33%,#010101 33%,#0d0d0d 46%,#0a0a0a 61%,#4e4e4e 81%,#383838 87%,#1b1b1b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #959595 0%,#010101 33%,#010101 33%,#0d0d0d 46%,#0a0a0a 61%,#4e4e4e 81%,#383838 87%,#1b1b1b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
 .nome{
+	font-family: 'resident_evilregular';
+	font-size: 50px;
 	color: blue;
 	font-weight: bolder;
+	text-align: center;
 	text-transform: uppercase;
 }
 .titulo-minicurriculo{
-	margin:10px;
+	font-family: 'resident_evilregular';
+	font-size: 40px;
+	color: white;
+	margin:40px;
+	text-align:left;
 	text-transform: uppercase;
 }
+.texto{
+	margin-bottom: 10px;
+	color: white;
+}
+.lista_texto{
+	margin-left: 50px;
+	color: white;
+}
 #foto{
-	margin-left: 10px;
 	text-align: center;
 	width: 100%;
 }
 .texto_minicurriculo{
 	margin:10px;
+	width: 900px;
+	margin: 0 auto;
+	color: white;
 }
 .gosto,.gosto a{
+	text-align: center;
 	margin:5px;
 	color: black;
 	font-size: 14px;
+	color: white;
 	text-decoration: none;
 	list-style: none;
-}
-.caixa, .caixa2, .caixa3{
-	width: 100px;
-	height: 100px;
-}
-.caixa{
-	background: red;
-}
-.caixa2{
-	background: blue;
-}
-
-.caixa3{
-	background: yellow;
 }
