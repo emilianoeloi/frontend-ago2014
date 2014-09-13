@@ -1,0 +1,66 @@
+/*! main.css v0.0.1 | Copyright | git.una-frontend-repo/portifolio-page/assets/css */
+
+.container {
+  background-color: gray;
+  color: gray;
+  font-family: Consolas, serif;
+  height: 1080px;
+}
+
+.negrito {
+  font-weight: bold;
+  background-color: darkgray;
+}
+
+#avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 256px;
+  max-width: 256px;
+}
+
+.port-body {
+  background-color: lightgray;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.lista-competencias {
+  margin: 0;
+}
+
+.lista-hobbies {
+  margin: 0;
+}
+
+.titulo {
+  background-color: darkgray;
+}
+
+.topicos {
+  margin: 0 5px 15px;
+  border: 1px solid darkgray;
+}
+
+.caixa {
+  width: 100px;
+  height: 10px;
+  float: left;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.caixas {
+  margin-bottom: 10px;
+}
