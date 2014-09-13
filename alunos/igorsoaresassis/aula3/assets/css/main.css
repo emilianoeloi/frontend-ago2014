@@ -1,0 +1,52 @@
+body{
+	width:960px;
+	margin: 0 auto;
+}
+h1{
+	font-family: verdana;
+	font-size: 20px;
+	color: red;
+}
+p{
+	font-family: verdana;
+	font-size: 10px;
+	color: red;
+}
+
+.caixa{
+	width: 100px;
+	height:100px;
+	margin: 50px;
+	border-radius: 10px;
+	box-shadow: 7px 7px 4px #465484;
+	padding: 10px;
+	-webkit-transition: width .2s;
+	   -moz-transition: width .2s;
+	    -ms-transition: width .2s;
+	     -o-transition: width .2s;
+	        transition: width .2s;
+}
+.c1{
+	background: gray;
+}
+.c2{
+	background: green;
+}
+.c3{
+	background: orange;
+}
+.c1:hover{
+	background: pink;
+	height: 300px;
+	width: 700px;
+}
+.c2:hover{
+	background: blue;
+	height: 300px;
+	width: 700px;
+}
+.c3:hover{
+	background: red;
+	height: 300px;
+	width: 700px;
+}

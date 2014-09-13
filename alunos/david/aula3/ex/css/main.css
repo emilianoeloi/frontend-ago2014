@@ -1,0 +1,37 @@
+body{
+	font-family: 'Montserrat';
+}
+hr{
+	color: #eee;
+}
+.titulo{
+	font-size: 26px;
+}
+.titulo-reportagem{
+	font-size: 20px;
+	color: blue;
+	-webkit-transition: color 5s;
+	   -moz-transition: color 5s;
+	    -ms-transition: color 5s;
+	     -o-transition: color 5s;
+	        transition: color 5s;
+}
+.titulo-reportagem{
+	color: red;
+}
+.texto-reportagem{
+	width: 100%;
+	font-size: 0.1em;
+
+	-webkit-transition: font-size 2s;
+	   -moz-transition: font-size 2s;
+	    -ms-transition: font-size 2s;
+	     -o-transition: font-size 2s;
+	        transition: font-size 2s;
+}
+.texto-reportagem:hover{
+	font-size: 1.0em
+}
+.reportagem{
+	margin: 10px;
+}
