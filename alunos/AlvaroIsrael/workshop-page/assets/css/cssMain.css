@@ -1,0 +1,75 @@
+#div-central {
+  margin: 0 auto;
+  height: 256px;
+  width: 256px;
+}
+
+.content {
+  background-color: lightgray;
+}
+
+#link-central {
+  padding-top: 40%;
+  text-align: center;
+}
+
+#footer {
+  text-align: right;
+}
+
+.logo {
+  max-height: 100px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+#conteudo {
+  max-width: 800px;
+  background-color: white;
+}
+
+.content-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.table-heeader {
+  font-size: 24px;
+  background-color: lightgray;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 15px;
+  height: 35px;
+}
+
+.table-menu {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.table-menu th {
+  border: 1px solid white;
+  text-align: center;
+  height: 30px;
+}
+
+#table {
+  width: 770px;
+  font-weight: lighter;
+
+}
+
+#table tr {
+  height: 25px;
+
+}
+
+#last-updated {
+  text-align: right;
+}
+
+#active-row {
+  background-color: lightgray;
+  font-weight: bold;
+}
