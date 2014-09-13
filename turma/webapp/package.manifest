@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1a",
+
+  "name": "Bike",
+
+  "package_path": "http://host.dominio.com/package.zip",
+
+  "developer": {
+		"name": "Dev",
+		"url" : "http://host.dominio.com"
+	}
+}

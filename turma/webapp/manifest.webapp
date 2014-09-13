@@ -1,0 +1,33 @@
+{
+    "name": "Bike Stats",
+    "description": "",
+    "launch_path" : "/app.html",
+    "icons": {
+        "256" : "/img/app_icon_256.png",
+        "128" : "/img/app_icon_128.png",
+        "60"  : "/img/app_icon_60.png",
+        "32"  : "/img/app_icon_32.png"
+    },
+    "type": "web",
+    "developer": {
+        "name": "Dev",
+        "url" : "http://host.dominio.com"
+    },
+    "installs_allowed_from": ["*"],
+    "version": "0.0.1b",
+    "default_locale": "pt-BR",
+    "permissions": {
+        "systemXHR": {
+            "description": "Acesso a API na web"
+        },
+        "desktop-notification": {
+            "description": "Notificações sobre o Aplicativo"
+        },
+        "push": {
+            "description": "Notificações sobre o Aplicativo"
+        },
+        "alarms": {
+            "description": "Utilizar o Alarme para lembrar"
+        }
+    }
+}
