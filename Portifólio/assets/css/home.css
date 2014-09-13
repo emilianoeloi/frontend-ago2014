@@ -1,0 +1,62 @@
+* ,html{
+	margin:5;
+	padding:0;
+	font-family:courier ;
+	font-size: 1em;
+}
+
+.container{
+	margin: 5px;
+}
+
+.titulo{
+	font-family: helvetica;
+	font-size: 2em;
+	color: blue;
+}
+
+.subtitulo{
+	padding-bottom: 10px;
+}
+
+.perfil{
+	height: 256px;
+	width: auto;
+}
+
+.lista{
+	padding-left: 20px;
+}
+
+.cabecalho{
+	padding-bottom: 20px;
+}
+
+.dt{
+	padding-left: 40px;
+
+}
+
+.dd{
+	padding-left: 80px;
+}
+
+.caixa{
+	height: 100px;
+	width:100px;
+	background-color: red;
+}
+
+.caixa2{
+	height: 100px;
+	width:100px;
+	background-color: green;
+}
+
+.caixa3{
+	height: 100px;
+	width:100px;
+	background-color: blue;
+}
+
+
