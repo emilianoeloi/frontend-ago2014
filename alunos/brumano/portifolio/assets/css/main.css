@@ -1,0 +1,59 @@
+body
+{
+	font-family: 'Roboto Slab', serif;
+}
+
+#content
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.titulo
+{
+	background-color: rgb(244, 113, 113);
+}
+.titulo-topo
+{
+	margin: 0 auto;
+	width: 260px
+
+}
+
+
+.portifolio-foto
+{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	border: 10px solid rgb(241, 243, 225);
+
+
+}
+
+#portifolio-foto-item
+{
+	width: 300px;
+	height: 300px;
+
+}
+
+.caixa, .caixa2, .caixa3
+{
+	width: 100px;
+	height: 100px;
+}
+
+.caixa
+{
+	background: red;
+}
+.caixa1
+{
+	background: blue;
+}
+.caixa2
+{
+	background: yellow;
+}
