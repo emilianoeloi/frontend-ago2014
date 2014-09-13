@@ -1,0 +1,43 @@
+.profile{
+
+	left:40%;
+
+	position:relative;
+
+	width: 100%;
+
+}
+
+.content {
+
+
+	text-align:justify;
+
+}
+
+.box{
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(254,0,0);
+
+
+}
+
+.box1{
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(0,254,0);
+
+
+}
+
+.box2{
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(0,0,254);
+
+
+}
