@@ -1,0 +1,33 @@
+*, html{
+	margin: 10px;
+	padding: 2;
+}
+
+.tituloNoticia{
+	font-size: 14px;
+}
+
+.borda{
+	background-color: #e1e1e1;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #010101;
+}
+
+.caixa{
+	position: relative;
+	width: 800px;
+	height: 250px;
+	left: 15%;
+	background-color: #DBF5EE;
+	border-radius: 10px;
+	color:#474F4D;
+	box-shadow: 5px 5px 5px #A2B5B0;
+	transition: font-size: 2s;
+	-webkit-transition: font-size 2s;
+	font-size: 0.1em;
+}
+
+.caixa:hover{
+	font-size: 1.0em;
+}

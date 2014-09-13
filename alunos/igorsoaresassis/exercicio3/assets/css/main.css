@@ -1,0 +1,22 @@
+body{
+	width:960px;
+	margin: 0 auto;
+}
+h1{
+	font-family: verdana;
+	font-size: 20px;
+	color: red;
+}
+p{
+	font-family: verdana;
+	font-size: 5px;
+	color: red;
+	-webkit-transition: font-size 5s;
+	   -moz-transition: font-size 5s;
+	    -ms-transition: font-size 5s;
+	     -o-transition: font-size 5s;
+	        transition: font-size 5s;
+}
+p:hover{
+	font-size: 20px;
+}

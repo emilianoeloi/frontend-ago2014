@@ -1,0 +1,30 @@
+h1{
+	color: green;
+}
+
+.nome{
+	color: blue;
+}
+
+#fotoAvatar {
+	position: relative;
+	left: 40%;
+	
+	}
+
+.caixa1{
+	height: 100px;
+	width: 100px;
+	background: green;
+}
+.caixa2{
+	height: 100px;
+	width: 100px;
+	background: blue;
+}
+
+.caixa3{
+	height: 100px;
+	width: 100px;
+	background: red;
+}
