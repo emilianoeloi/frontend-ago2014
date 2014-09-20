@@ -1,0 +1,76 @@
+<html>
+	<head>
+			
+		<link type="text/css" href="main.css" rel="stylesheet">
+
+		<title>Calculadora</title>
+	</head>
+	<body id="body">
+		<div class="container">
+			
+			<header id="cabecalho">
+				<div class="logo spite">Calculadora</div>
+			</header>
+			<section>
+			 	<div class="visor">0.0</div>
+			 	
+			</section>
+			<section class="teclas">
+				<section class="numero">			
+					<div class="tecla numero spite" id="a">1</div>
+					<div class="tecla numero spite" id="b">2</div>
+					<div class="tecla numero spite" id="c">3</div>
+					<div class="tecla numero spite" id="d">4</div>
+					<div class="tecla numero spite" id="e">5</div>
+					<div class="tecla numero spite" id="f">6</div>
+					<div class="tecla numero spite" id="g">7</div>
+					<div class="tecla numero spite" id="h">8</div>
+					<div class="tecla numero spite" id="i">9</div>
+					<div class="tecla numero spite" id="j">0</div>
+				</section>
+				<section class="operadores">
+					<div class="tecla operacao spite" id="soma">+</div>
+					<div class="tecla operacao spite" id="igual">-</div>
+					<div class="tecla operacao spite" id="igual">/</div>
+					<div class="tecla operacao spite" id="igual">*</div>
+					<div class="tecla operacao spite" id="igual">=</div>
+
+				</section>
+			</section>		
+			
+			
+
+		</div>
+		<script>
+			var calculadora = {};
+			calculadora.nomeAluno = "caio Oliveira";
+			calculadora.numeros = [1,2,3,4,5,6,7,8,9];
+			calculadora.operacao = ['+','-','/','*', '='];
+			///ao carregar o documento
+			window.onload=function(){
+
+				console.log('Calculadora Carregada');
+				console.log('Aluno', calculadora.nomeAluno);
+				console.log('numero', calculadora.numeros);
+				console.log('operacao', calculadora.operacao);
+				///números
+				var i;
+				var numeros = document.querySelector(".numero");
+				for(i=0; i<calculadora.numeros.length;i++){
+					console.log('Número', calculadora.numeros[i]);
+					novaTecla.setAttribute("class","tecla numero spite");
+					novaTecla.innerHTML = calculadora.numeros[i];
+					novaTecla.addEventListener('click', function(){
+						console.log(event);
+					})
+					numero.appendChild(novaTecla);
+					console.log('número',calculadora.numeros[i]);
+					
+					
+				}
+			}
+
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+*, html{
+	margin: 5;
+	padding: 0;
+	font-family: fira_sansextralight;
+	font-size: 1em;
+}
+
+.quadrado{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+#q1{
+	background-color: red;
+	position: static;
+}
+#q2{
+	background-color: green;
+	position: relative;
+	left:10px;
+}
+#q3{
+	background-color: blue;
+	position: absolute;
+}
+#q4{
+	background-color: gray;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
