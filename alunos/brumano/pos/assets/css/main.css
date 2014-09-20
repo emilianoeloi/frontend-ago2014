@@ -1,0 +1,48 @@
+body
+{
+	font-family: 'Roboto Slab', 'bebas_neueregular', 'typoster_outlineregular', 'typosteritalic','typoster_outlineitalic', serif;
+	font-size: 10px;
+}
+#corpo
+{
+	width: 800px;
+	margin: 0 auto;
+}
+.cx{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+.cx p 
+{
+	padding: 16px 0 0 10px;
+	color: white;
+	font-size: 16px;
+}
+#c1
+{
+	background-color: red;
+	position: static;
+	font-family: 'Roboto Slab';
+}
+#c2
+{
+	background-color: green;
+	position: relative;
+	left: 10px;
+	font-family: 'bebas_neueregular';
+}
+#c3
+{
+	background-color: blue;
+	position: absolute;
+	font-family: 'typoster_outlineregular';
+}
+#c4
+{
+	background-color: gray;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-family: 'typosteritalic';
+}
