@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-BR">
+		<meta charset="utf-8" />
+		<title>Posicionamento</title>
+		<link rel="stylesheet" href="../webfont/stylesheet.css" />
+		<style type="text/css">
+		.cx { font-family: 'pacificoregular';
+			padding: 20px;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+		#c1 {background-color: red;
+			position: static;
+		}
+		#c2 {background-color: green;
+			position: relative;
+			left: 10px;
+		}
+		#c3 {background-color: blue;
+			position: absolute;
+		}
+		#c4 {background-color: pink;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="c1" class="cx"> Static
+		</div>
+		<div id="c2" class="cx"> Relative
+		</div>
+		<div id="c3" class="cx"> Absolute
+		</div>
+		<div id="c4" class="cx"> Fixed
+		</div>
+	</body>

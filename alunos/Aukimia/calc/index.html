@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-BR">
+		<meta charset="utf-8" />
+		<title>Calculadora</title>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<style type="text/css">
+		body {background-color: #B9EA76;
+			margin: 0;}
+		#container {background-color: #D03BD6;
+		width: 320px;
+		margin:0 auto;
+		}
+		header {
+			background-color: #D0BB0C;
+			height: 48px; padding-top: 4px;
+		}
+		header .logo {background: no-repeat url(assets/img/logo.png);
+			background-color: transparent;
+		width: 40px;
+		height: 40px;
+		text-indent: -10000px;
+				margin: 0 auto;
+		}
+		#visor {
+			background-color: #A8E0D6;
+			margin: 4px;
+			height: 48px;
+			text-align: right;
+			font-size: 40px;
+		}
+		.tecla {
+			width: 50px;
+			height: 50px;
+			margin: 4px;
+		}
+		.numero {background: no-repeat url(assets/img/number.png);
+			text-align: center;
+		
+		}
+		.simbolos {background: no-repeat url(assets/img/symbol.png);}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div class="logo"> Calculadora
+		</div>
+			</header>
+				<section id="visor"> 0,0
+		</section>
+		<section class="teclas">
+			<div class="numeros">
+				<div class="tecla numero">1</div>
+				<div class="tecla numero">2</div>
+			</div>
+			<div class="opracoes">
+				<div class="operacao">+</div>
+				<div class="operacao">=</div>
+			</div>
+		</section>
+		
+		</div>
+	</body>
