@@ -1,0 +1,125 @@
+.spite{
+
+	background: url('Imagem/botaologo.png') no-repeat ; 
+}
+ 
+
+
+#body{
+	background-color: 87A3FF;
+	padding-top: 0 auto;
+	margin:0;
+}
+
+#cabecalho{
+	height: 48px;
+	width: 320px;
+	padding:0 auto;
+	margin-left: 0px;
+}
+
+#soma{
+
+
+}
+
+#igual{
+
+
+}
+
+#j{
+	margin:0 auto;
+	margin-left: 62px;
+}
+
+.container{
+	background-color: 3D84CC;
+	width: 320px;
+	margin:0 auto;
+	height: 100%;
+}
+
+.logo{
+
+	width: 40px;
+	height: 40px;
+	background-position: -0px -50px; width: 40px; height: 40px; 
+	text-indent: -1000px;
+	margin:0 auto;
+	margin-top: 4px;
+}
+
+.visor{
+	background-color: FFB287;
+	width: 310px;
+	height: 48px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.teclas{
+
+	
+	margin-left:20px;
+	margin-top: 60px;
+	float: left;
+	
+	
+
+}
+
+.numero{
+	
+	width:190px;
+	height: 150px;
+	float: left;
+}
+
+.operadores{
+	
+	float: left;
+	width: 70px;
+	height: 190px;
+	margin-left: 20px;
+	
+	
+}
+
+.tecla{
+
+
+	background-position: -0px -0px; 
+	width: 50px;
+	height:50px;
+	
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 40px;
+
+	
+
+	
+}
+
+.tecla:hover{
+	opacity:0.7;
+}
+
+.tecla:active{
+	opacity:0.5;
+}
+
+.operacao{
+	
+	float: right;
+
+
+	
+
+}
+
+
+

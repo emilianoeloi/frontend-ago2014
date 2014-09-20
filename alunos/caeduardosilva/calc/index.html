@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-BR">
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/> 
+		<link href='../webfont/stylesheet.css' rel='stylesheet' type='text/css'>
+		<!--
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<style>
+			h1{
+				font-family: 'Lobster', cursive;
+			}
+		</style>
+		-->
+    <script>
+       var calculadora = {};
+       calculadora.nomeAluno = "Carlos Almeida";
+       calculadora.numero = [1,2,3,4,5,6,7,8,9,0];
+       calculadora.operacoes = ['+','-','*','/','='];
+       
+       calculadora.obterValorVisor = function(){
+   	       	var visor = document.querySelector("#visor");
+   	       	return visor.innerHTML;
+       }
+
+       calculadora.escreverNoVisor = function(valor){
+   	       	var visor = document.querySelector("#visor");
+		   	visor.innerHTML = valor;
+       }
+
+       calculadora.clicarEmNumero = function(numero){
+       		var valorVisor = calculadora.obterValorVisor();
+       		if(calculadora.clicouEmOperacao){
+       			calculadora.primeiroValor = parseFloat(valorVisor);
+       			valorVisor = 0;
+       			calculadora.clicouEmOperacao = false;
+       		}
+       		if(valorVisor == 0){
+       			valorVisor = "";
+       		}
+       		var novoValor = valorVisor + numero;
+       		calculadora.escreverNoVisor(novoValor);
+       }
+
+       //ao carregar o documento
+
+       window.onload = function(){
+       		console.log('Calculadora Carregada');
+       		console.log('Aluno', calculadora.nomeAluno);
+       		console.log('Numeros', calculadora.numero);
+       		console.log('Operacoes', calculadora.operacoes);
+       		//Numeros
+       		var i;
+       		var numeros = document.querySelector(".numeros");
+       		for (i=0; i<=calculadora.numero.length -1; i++) { 
+       			var novaTecla = document.createElement("div");
+       			novaTecla.innerHTML = calculadora.numero[i];
+   				novaTecla.addEventListener('click', function(event){
+   					calculadora.clicarEmNumero(event.srcElement.innerHTML);
+   				});
+       			novaTecla.setAttribute("class", "tecla numero");
+       			numeros.appendChild(novaTecla);
+ 			    console.log ('Numero', calculadora.numero[i]);
+			}
+       
+       		var operacoes = document.querySelector(".operacoes");
+       		for (i=0; i<=calculadora.operacoes.length -1; i++) { 
+       			var novaTecla = document.createElement("div");
+       			novaTecla.innerHTML = calculadora.operacoes[i];
+       			novaTecla.setAttribute("class", "tecla operacao");
+       			novaTecla.addEventListener('click',
+       				function(event){
+       					calculadora.clicarEmOperacao(
+       						event.srcElement.innerHTML);
+       				})
+       			operacoes.appendChild(novaTecla);
+ 			    console.log ('Operacao', calculadora.operacoes[i]);
+			}
+
+			calculadora.clicouEmOperacao = false;
+			calculadora.ultimaoperacao = "";
+			calculadora.clicarEmOperacao = function(
+				operacao){
+					if (operacao == "="){
+						calculadora.segundoValor = parseFloat(calculadora.obterValorVisor());
+						calculadora.calcular();
+					}
+					else{
+						calculadora.clicouEmOperacao = true;
+						calculadora.ultimaoperacao = operacao	
+					}
+				}
+				calculadora.calcular = function(){
+					var resultado = 0;
+					switch(calculadora.ultimaoperacao){
+						case"+":
+							resultado = calculadora.primeiroValor + calculadora.segundoValor;
+						break;
+
+						case"-":
+							resultado = calculadora.primeiroValor - calculadora.segundoValor;
+						break;
+
+						case"*":
+							resultado = calculadora.primeiroValor * calculadora.segundoValor;
+						break;
+
+						case"/":
+							resultado = calculadora.primeiroValor / calculadora.segundoValor;
+						break;
+						default:
+							resultado = "Erro!";
+						break;
+					}
+					calculadora.escreverNoVisor(resultado);
+				}
+       }
+    </script>		
+
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="logo">
+					Calculadora
+				</div>
+			</header>
+				<section id="visor">
+					0
+				</section>
+				<section class="teclas">
+					<section class="numeros">
+					</section>
+					<section class="operacoes">
+					</section>
+				</section>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,140 @@
+.cx{
+	width:100px;
+	height:100px;
+	margin: 10px;
+	font-family: 'alex_brushregular';
+}
+
+#c1{
+	background-color: red;
+	position: static; /*padrao*/
+}
+
+#c2{
+	background-color: green;
+	position: relative;
+	left: 10px;
+}
+
+#c3{
+	background-color: blue;
+	position: absolute;
+}
+
+#c4{
+	background-color: gray;
+	position: fixed; /* exemplo menu */
+	bottom: 0;
+	right: 0;
+}
+
+/*
+
+*, html{
+	margin: 10px;
+	padding: 0;
+  	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+    color: #333;
+}
+
+body {
+	line-height: 1.43;
+	background-color: #eee;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+img {
+  border: 0;
+}
+
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+
+.container{
+	width:70%;
+	min-height:calc(100% - 2rem - 2px);
+	margin:0 auto;
+	padding:0 2.5% 2rem 2.5%;
+	max-width:50rem;
+	border:1px solid #ccc;
+	box-shadow: 0.3rem 0.4rem 0.5rem #ccc;
+    background:#fff;
+    color:#333;
+}
+
+.titulo_nome{
+	color: navy;
+	text-align:center;
+}
+
+.titulo_cargo{
+	color: gray;
+}
+
+
+p {
+	padding:10px;
+}
+
+ .centralizar{
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 256px;
+ 	height: 256px;
+ }
+
+
+
+.borda{
+	background-color: #ccc;
+	padding: 1px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#caixa-1{
+	width:100px;
+	height:100px;
+	transform: rotate(90deg);
+	-webkit-transition: width 2s;
+    transition: width 2s;
+    border-radius: 20px;
+	box-shadow: 5px 5px 5px #888888;
+	background-color: #ccc;
+}
+
+#caixa-1:hover {
+    width: 300px;
+}
+
+*/
