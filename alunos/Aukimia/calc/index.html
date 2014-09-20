@@ -5,60 +5,122 @@
 		<title>Calculadora</title>
 		<link rel="stylesheet" href="assets/css/main.css"/>
 		<style type="text/css">
-		body {background-color: #B9EA76;
-			margin: 0;}
-		#container {background-color: #D03BD6;
-		width: 320px;
-		margin:0 auto;
+		.sprite, .numero, .operacao{
+			background: url('assets/img/sprite.png') no-repeat;
 		}
-		header {
-			background-color: #D0BB0C;
-			height: 48px; padding-top: 4px;
+		.numero {background-position: -0px -0px; width: 50px; height: 50px;
+			text-align: center; font-size: 20px;
+			float: left;	
 		}
-		header .logo {background: no-repeat url(assets/img/logo.png);
-			background-color: transparent;
-		width: 40px;
-		height: 40px;
-		text-indent: -10000px;
-				margin: 0 auto;
-		}
-		#visor {
-			background-color: #A8E0D6;
-			margin: 4px;
-			height: 48px;
-			text-align: right;
-			font-size: 40px;
-		}
-		.tecla {
-			width: 50px;
+		.operacao {background-position: -0px -50px; width: 50px;
 			height: 50px;
-			margin: 4px;
+			text-align: center; font-size: 20px;
 		}
-		.numero {background: no-repeat url(assets/img/number.png);
-			text-align: center;
-		
-		}
-		.simbolos {background: no-repeat url(assets/img/symbol.png);}
 		</style>
 	</head>
 	<body>
 		<div id="container">
 			<header>
-				<div class="logo"> Calculadora
+				<div class="logo sprite"> Calculadora
 		</div>
 			</header>
-				<section id="visor"> 0,0
-		</section>
+				<section id="visor">0</section>
 		<section class="teclas">
 			<div class="numeros">
-				<div class="tecla numero">1</div>
-				<div class="tecla numero">2</div>
 			</div>
-			<div class="opracoes">
-				<div class="operacao">+</div>
-				<div class="operacao">=</div>
+			<div class="operacoes">
 			</div>
 		</section>
-		
+		<script type="text/javascript">
+var calculadora = {};
+calculadora.nomeAluno = "Aurea Ribeiro";
+calculadora.numeros = [1,2,3,4,5,6,7,8,9,0];
+calculadora.operacoes = ['+','-','*','/','='];
+calculadora.obterValorVisor = function(){
+	var visor = document.querySelector("#visor");
+	return visor.innerHTML;
+}
+calculadora.escreverNoVisor = function(valor){
+	var visor = document.querySelector("#visor");
+	visor.innerHTML = valor;
+}
+calculadora.primeiroValor = null;
+calculadora.segundoValor = null;
+calculadora.clicarEmNumero = function(numero){
+	var valorVisor = calculadora.obterValorVisor();
+	if (calculadora.clicouEmOperacao){
+		calculadora.primeiroValor = valorVisor;
+		valorVisor = "0";
+		calculadora.clicouEmOperacao = false;
+	}
+	if (valorVisor == "0"){
+		valorVisor = "";
+	}
+	var novoValor = valorVisor + numero;
+	calculadora.escreverNoVisor(novoValor);
+}
+calculadora.clicouEmOperacao = false;
+calculadora.ultimaOperacao = "";
+calculadora.clicarEmOperacao = function(operacao){
+	if(operacao == "="){
+		calculadora.segundoValor = calculadora.obterValorVisor();
+		calculadora.calcular();
+	}else{
+	calculadora.clicouEmOperacao = true;
+	calculadora.ultimaOperacao = operacao;
+	}
+}
+calculadora.calcular = function(){
+	var resultado = 0;
+	switch(calculadora.ultimaOperacao){
+		case "+":
+			resultado = calculadora.primeiroValor + calculadora.segundoValor;
+			break;
+		case "-":
+			resultado = calculadora.primeiroValor + calculadora.segundoValor;
+			break;
+		case "*":
+			resultado = calculadora.primeiroValor + calculadora.segundoValor;
+			break;
+		case "/":
+			resultado = calculadora.primeiroValor + calculadora.segundoValor;
+			break;
+	}
+	calculadora.escreverNoVisor(resultado);
+}
+
+///ao carregar o documento
+window.onload = function(){
+	console.log('Calculadora Carregada');
+	console.log('Aluno', calculadora. nomeAluno)
+	console.log('Números', calculadora. numeros)
+	console.log('Operações', calculadora. operacoes)
+	/// Numeros
+	var i;
+	var numeros = document.querySelector(".numeros")
+	for(i=0;i<calculadora.numeros.length;i++){
+		var novaTecla = document.createElement("div");
+		novaTecla.setAttribute("class","tecla numero");
+		novaTecla.innerHTML = calculadora.numeros[i];
+		novaTecla.addEventListener('click', function(event){
+			calculadora.clicarEmNumero(event.srcElement.innerHTML);
+		})
+		numeros.appendChild(novaTecla);
+
+		console.log('Número', calculadora.numeros[i]);
+	}
+
+	var operacoes = document.querySelector(".operacoes")
+	for (i = 0; i<calculadora.operacoes.length;i++){
+	var novaTecla = document.createElement("div");
+	novaTecla.setAttribute("class","tecla operacao");
+	novaTecla.innerHTML = calculadora.operacoes[i];
+	novaTecla.addEventListener('click', function(event){
+		calculadora.clicarEmOperacao(event.srcElement.innerHTML);
+	})
+	operacoes.appendChild(novaTecla);	
+	};
+}
+		</script>
 		</div>
 	</body>

@@ -1,2 +1,38 @@
-.logo {background-image: 
-margin: 10 auto;}
+
+		body {background-color: #ccc;
+			margin: 0;}
+		#container {background-color: #F75A46;
+		width: 320px;
+		margin:0 auto;
+		}
+		
+		header {
+			background-color: #9C392C;
+			height: 48px; padding-top: 4px;
+		}
+		header .logo {background-position: -0px -100px;
+		width: 40px;
+		height: 40px;
+		text-indent: -10000px;
+				margin: 0 auto;
+		}
+		#visor {
+			background-color: #C2D0B8;
+			margin: 4px;
+			height: 48px;
+			text-align: right;
+			font-size: 40px;
+		}
+		.numeros {width: 190px;
+			float: left;
+		}
+		.operacoes {width:60px;
+			float: right;
+		}
+		.tecla {
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+		}
+		.tecla.numero:hover{opacity: 0.7;}
+		
