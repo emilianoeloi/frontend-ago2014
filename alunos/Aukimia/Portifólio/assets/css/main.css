@@ -1,0 +1,27 @@
+/*RESET*/
+*, html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 1em;
+}
+/*Estilos*/
+body {background: url()}
+h1 {color:orange; font-family: 'Lobster', cursive;}
+h2 {color: blue; margin:10px 5px;}
+h3 {margin: 10px}
+.nome {color:blue;}
+#container {border: 1px solid #b90000; width: 990px; padding: 20px; display: block;}
+#foto {padding: 5px; border: 1px dotted red; margin:0 auto; width: 256px;}
+.caixa {width: 100px; height: 100px; background-color: #ccc; margin:10px;}
+.red {background-color: red;}
+.green {background-color: green;}
+.blue {background-color: blue;}
+li a {margin-left: 10px; border: 1px dotted black;}
+.numero {border: 1px dotted blue;
+margin: 10px 5px 30px 40px;
+padding: 20px}
+
+dl {margin:40px; border: 1px dotted blue; padding:20px; width:400px;}
+dt {padding-left:30px;}
+dd {padding-left:40px;}

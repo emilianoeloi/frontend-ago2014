@@ -1,17 +1,18 @@
 {
-  "name": "aluno3",
+  "name": "MyNodeJs",
   "version": "0.0.1",
-  "description": "Desenvolvimento front-end - JS",
+  "description": "Front End",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Italo Goncalves",
+  "license": "BSD",
   "keywords": [
-    "front-end",
-    "javascript"
+    "JSON",
+    "Node",
+    "JS"
   ],
-  "author": "Carlos",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.9.0"
   }
