@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-BR">
+		<meta charset="utf-8" />
+        <link rel='stylesheet' type='text/css' href='borda.css'>
+
+		<title>Calculadora</title>
+	</head>
+	<body>
+		
+	<style>
+		body{
+			background-color: #D3DFE8;
+			margin: 0 auto;
+   
+
+		}
+		.sprite { 
+			background: url('img/spritegen.png') no-repeat;
+
+		}   
+			.container{
+				background-color: #183133;
+				width: 320px;
+				height: 374px;
+				margin: 0 auto;
+			}
+		header {
+			background-color: #234894;
+			height: 40px;
+			padding: 4px;
+		}
+		header .logo{
+			width: 40px;
+			height: 40px;
+			background-position: -0px -80px; width: 40px; height: 40px;;
+			text-indent: -1000px;
+			margin:0 auto;
+		}
+
+		#visor{
+			margin: 4px;
+		    height: 48px;
+		    text-align: right;
+		    background-color: #D3DFE8;
+		}
+			
+		.tecla{
+			width: 40px;
+			height: 40px;
+			margin: 4px;
+			text-align: center;
+			font-size: 30px;
+
+		}
+
+		.tecla:hover{
+           opacity: 0.7;     
+
+		}
+		.tecla:active{
+            opacity: 0.5;
+
+		}
+		.numero{
+			background-position: -0px -0px; width: 40px; height: 40px;
+			float: left;
+
+		}
+		.numeros{
+			width: 190px;
+			float: left;
+		}
+		.operacoes{
+            width: 60px;
+            float: right;
+		}
+		.operacao{
+			background-position: -0px -40px; width: 40px; height: 40px;
+		
+
+		}
+
+
+
+	</style>
+		<div class="container">
+
+		<header>
+                <div class="logo sprite">Calculadora</div>
+		</header>
+
+		<section id="visor">0</section>
+
+      
+        <section class="teclas">
+
+          <section class="numeros">
+
+
+		 </section>
+
+          <section class="operacoes">
+
+		 </section>
+
+        </section>
+		</div>
+
+	<script>
+	   var  calculadora = {};
+	     calculadora.nomeAluno = "Rafael Ribeiro";
+	     calculadora.numeros = [1,2,3,4,5,6,7,8,9,0];
+	     calculadora.operacoes = ['+','-','*','/',',','='];
+
+         calculadora.obterValorVisor = function (){
+
+          	var visor = document.querySelector("#visor");
+	     	return visor.innerHTML;
+         }
+
+	     
+	    calculadora.escreverNoVisor = function (valor){
+
+	     	var visor = document.querySelector("#visor");
+	     	visor.innerHTML = valor;
+	     }
+
+        calculadora.primeiroValor = null;
+        calculadora.segundoValor = null;
+	    calculadora.clicaEmNumero = function(numero){
+
+          var valorVisor = calculadora.obterValorVisor();
+
+            if(calculadora.clicouEmOperacao){
+            	calculadora.primeiroValor = parseFloat(valorVisor);
+           	    valorVisor = "0";
+           	    calculadora.clicouEmOperacao = false;
+           }
+
+            if(valorVisor == "0"){
+            	valorVisor = "";
+            }
+
+          var novoValor = valorVisor + numero;
+          calculadora.escreverNoVisor(novoValor);
+
+	    }
+
+	    calculadora.clicouEmOperacao = false;
+	    calculadora.ultimaOperacao = "";
+	    calculadora.clicarEmOperacao = function(operacao){
+
+	    	      if(operacao == "="){
+
+	    	      calculadora.segundoValor = parseFloat(calculadora.obterValorVisor());
+	    	      calculadora.calcular();
+
+	    	      }else{
+	    	      	     calculadora.clicouEmOperacao = true;
+                         calculadora.ultimaOperacao = operacao;
+	    	      }
+	    }
+	    calculadora.calcular = function(){
+
+	    	 var resultado = 0;
+	    	 switch (calculadora.ultimaOperacao){
+
+              case "+":
+                  resultado = calculadora.primeiroValor + calculadora.segundoValor;
+                  break;
+              case "-":
+                  resultado = calculadora.primeiroValor - calculadora.segundoValor;
+                  break;
+              case "/":
+                  resultado = calculadora.primeiroValor / calculadora.segundoValor;
+                  break;
+              case "*":
+                  resultado = calculadora.primeiroValor * calculadora.segundoValor;
+                  break;
+
+               default:
+                    resultado = "Erro";
+                    break;
+
+	    	 }
+
+       calculadora.escreverNoVisor(resultado);
+	    }
+
+	   // ao carregar o documento
+	   window.onload= function(){
+	   	 console.log('Calculadora Carregada');
+	   	 console.log('Aluno',calculadora.nomeAluno);
+	   	 console.log('Numeros',calculadora.numeros);
+	   	 console.log('Operacoes',calculadora.operacoes);
+
+        var i;
+        var numeros = document.querySelector(".numeros")
+        for (var i = 0;i<calculadora.numeros.length;i++){
+        	console.log('Numero',calculadora.numeros[i]);
+        	var novaTecla = document.createElement("div");
+        	novaTecla.setAttribute("class","sprite tecla numero");
+        	novaTecla.innerHTML = calculadora.numeros[i];
+
+	        novaTecla.addEventListener('click',
+	        	function(event){console.log(event.srcElement.innerHTML);})
+
+	       novaTecla.addEventListener('click',
+	        	function(event){calculadora.clicaEmNumero(event.srcElement.innerHTML);})
+
+        	numeros.appendChild(novaTecla);
+        	console.log('Numero',calculadora.numeros[i]);
+        }
+
+       var operacoes = document.querySelector(".operacoes")
+       for(i=0;i<calculadora.operacoes.length;i++){
+        var novaTecla = document.createElement("div");
+        novaTecla.setAttribute("class","sprite tecla operacao");
+        novaTecla.innerHTML = calculadora.operacoes[i];
+        novaTecla.addEventListener('click', function(event){calculadora.clicarEmOperacao(event.srcElement.innerHTML);})
+        operacoes.appendChild(novaTecla);
+
+       }
+
+   
+
+	   }
+    </script>
+
+
+	</body>
+</html>

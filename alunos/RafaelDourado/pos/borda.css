@@ -1,0 +1,36 @@
+.margin{
+
+	margin-left: 10px;
+}
+
+.borda{
+	background-color: #e1e1e1;
+	padding: 10px;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 500px;
+}
+
+.caixa{
+    width:  100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#c1{
+	background-color: red;
+	position: static;
+}
+#c2{
+	background-color: blue;
+	position: relative;
+	left: 10px;
+}
+#c3{
+	background-color: green;
+	position: absolute;
+}
+#c4{
+	background-color: gray;
+	position: fixed;
+}
