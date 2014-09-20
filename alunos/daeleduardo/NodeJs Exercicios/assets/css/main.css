@@ -1,0 +1,180 @@
+
+
+*, html{
+	/*
+	margin:0;
+	padding:0;
+*/
+	font-family: 'Indie Flower', cursive;
+	font-size: 1em;
+
+}
+
+
+
+
+
+#titulo1{
+
+	color:red;
+
+}
+
+#titulo2{
+
+	color:green;
+
+}
+
+#titulo3{
+
+	color:blue;
+
+}
+
+li a {
+
+	color:red;
+	margin:10;
+	padding:5;
+	left-margin:30px;	
+
+}
+
+ul  {
+
+	list-style-type:none;
+	
+	
+
+}
+
+ol .b {
+
+	list-style-type:decimal;
+
+	
+
+}
+
+dt {
+
+
+ 	font-weight:bold;
+
+
+}
+
+caption ,table, th, td  {
+
+
+	text-align: center;
+	border: 1px solid black;
+
+}
+
+.borda{
+
+	background-color:#e1e1e1;
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	box-shadow:  10px 10px 5px #888888;
+
+}
+
+.box {
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(254,0,0);
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	box-shadow:  10px 10px 5px #888888;
+	transition:2s;
+	-web-kit-transition:2s;
+
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	
+
+
+
+}
+
+.box:hover {
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(254,254,0);
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 100px;
+	transition:2s;
+	-web-kittransition:2s;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	
+
+}
+
+.box1{
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(0,254,0);
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	box-shadow:  10px 10px 5px #888888;
+	
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	
+}
+
+.box1:hover {
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(0,254,254);
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 100px;
+	transition:2s;
+	-web-kittransition:2s;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+
+
+}
+
+.box2{
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(0,0,254);
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	box-shadow:  10px 10px 5px #888888;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
+.box2:hover {
+
+	width: 100px;
+	height: 100px;
+	background-color:rgb(254,0,254);
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 100px;
+	transition:2s;
+	-web-kittransition:2s;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+
+
+}

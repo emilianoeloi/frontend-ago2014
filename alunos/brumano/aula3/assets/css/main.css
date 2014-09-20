@@ -1,0 +1,52 @@
+body
+{
+	font-family: 'Roboto Slab', serif;
+}
+#corpo
+{
+	width: 800px;
+	margin: 0 auto;
+}
+#box-caixa
+{
+	
+}
+.caixa
+{
+	border-top: 1px solid #cccccc;
+	margin-bottom: 20px;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+
+}
+.caixa-img
+{
+	margin-top: 20px;
+}
+.caixa-txts-txt
+{
+	font-size: 0.6em;
+	-webkit-transition: font-size .5s ease-in-out;
+	-moz-transition: font-size .5s ease-in-out;
+	transition: font-size .5s ease-in-out;
+
+}
+
+.caixa:hover
+{
+	background: #cccccc;
+
+}
+.caixa:hover > .caixa-txts
+{
+	font-size: 1.0em;
+
+}
+.caixa-txts:hover > .caixa-txts-txt
+{
+	font-size: 1.0em;
+
+}
+
+
