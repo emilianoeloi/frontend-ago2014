@@ -13,9 +13,43 @@ calculadora.escreverNoVisor = function(valor){
 }
 calculadora.clicarEmNumero = function(numero){
 	var valorVisor = calculadora.obterValorVisor();
-	
+	if(valorVisor == "0"){
+		valorVisor = ""
+	}
 	var novoValor = valorVisor + numero;
 	calculadora.escreverNoVisor = novoValor;
+}
+
+calculadora.clicarEmOperacao = function(operacao){
+	if(operacao == "="){
+		calculadora.segundoValor = obterValorVisor();
+		calculadora.calcular();
+	}else{
+		calculadora.ClicouEmOperacao = true;
+		calculadora.ultimaOperacao = operacao;
+	}
+}
+
+calculadora.calcular = function(){
+	var resultado = 0;
+	switch(calculadora.ultimaOperacao){
+		case "+":
+			resultado = calculadora.primeiroVAlor + calculadora.segundoValor;
+			break;
+		case "-":
+			resultado = calculadora.primeiroVAlor - calculadora.segundoValor;
+			break;
+		case "*":
+			resultado = calculadora.primeiroVAlor * calculadora.segundoValor;
+			break;
+		case "/":
+			resultado = calculadora.primeiroVAlor + calculadora.segundoValor;
+			break;
+		else
+			resultado = "Error";
+			break;
+		
+	}
 }
 
 window.onload =  function(){
