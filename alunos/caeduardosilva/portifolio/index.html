@@ -49,18 +49,64 @@
 					<dt>Trabalhos sociais</dt>
 					<dd>Participar de campanhas sociais com objetivo de arrecadar itens como roupas ou alimentos para doação em creches e asilos</dd>
 				</dl>
-				<div>
-					<form action="#">
-  						Email <input type="text" name="fname"><br>
-  						Mensagem <input type="text" name="lname"><br>
-  						<input type="submit" value="Enviar">
+
+		<div>
+			<section class="contact">
+				<header>
+					<h3>Contato</h3>
+				</header>
+				<form id="form-contact" action="/api/contatos" method="post">
+  					<p>
+  						<label>Email 
+  							<input type="email" name="email"/>
+  						</label>
+  						<label>Mensagem
+  							<textarea name="mensagem"></textarea>
+  						</label>
+  						<button id="btn-form-contact">Enviar</button>
+  					</p>
 					</form>
-				</div>
+					<p class="message wait hide">Aguarde...</p>
+					<p class="message hide">Obrigado! Em preve responderei seu contato!</p>
+				</section>
+		</div>	
+
  			</section>
  			<footer>
  				&copy; front-end
  			</footer>
 		</div>
 	</body>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+	//document.queryselector("#form-contact")
+	$("#form-contact").submit(function(){
+
+		$("#btn-form-contact").addClass("hide");
+		$(".message.wait").removeClass("hide");
+
+		$.ajax({
+			url: '/api/contatos',
+			type: 'post',
+			datatype: 'json',
+			data: $("#form-contact").
+				serialize(),
+			success: function(data){
+				//alert(data);
+				$("#btn-form-contact").removeClass("hide");
+				$(".message.wait").addClass("hide");
+				$(".message.success").removeClass("hide");
+			},
+			error: function(data){
+				alert('error'+data);
+			}
+		})
+		alert('enviado form');
+		return false;
+	})
+</script>
+
 </html>
 

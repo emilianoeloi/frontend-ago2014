@@ -1,0 +1,13 @@
+.hide{
+  display:none;
+}
+
+.message{
+  color:green;
+}
+
+.contato{
+  position: fixed;
+    right: -5px;
+}
+
