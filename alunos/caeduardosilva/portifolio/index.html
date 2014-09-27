@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Aula 2</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css"/>		
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/> 
+	</head>
+	<body>
+		<div class="container">
+ 			<head>
+ 				<h1 class="titulo_nome">Carlos Eduardo Silva de Almeida</h1>
+ 			</head>
+ 			<section>
+ 				<img class="centralizar" src="assets/img/perfil.jpg" alt="imagem"/>
+ 				<h2>Experiência</h2>
+ 				<hr>
+ 				<p>
+ 				2007 - atual
+ 				</p>
+ 				<p class="titulo_cargo">
+ 				Analista de Planejamento Senior
+ 				</p>
+ 				<p>
+ 				Contribuições relevantes
+ 				<ul>
+	 				<li>
+	 					Participação ativa no projeto para construção do modelo de remuneração variáve da operação;
+					</li>	 					
+					<li>
+						Participação ativa na criação da área de M.I.S.;
+					</li>
+					<li>
+						Apoio a gerência da área, atuando como ponfo focal nos momentos de ausência da liderança;
+					</li>
+					<li>
+						Participação ativa no projeto para controle da estrutura das equipes, atuando como responsável pela gestão do processo;
+					</li>
+					<li>
+						Ponto focal da empresa para assuntos técnicos relacionados a informações de produção, indicadores, relatórios internos e externos etc.
+					</li>
+				</ul>		
+				</p>			
+
+ 				<h2>Coisas que gosto</h2>
+ 				<hr>
+ 				<dl>
+					<dt>Fotografia</dt>
+					<dd>Seção de vida selvagem, pessoas, arte e paisagens</dd>
+					<dt>Trabalhos sociais</dt>
+					<dd>Participar de campanhas sociais com objetivo de arrecadar itens como roupas ou alimentos para doação em creches e asilos</dd>
+				</dl>
+
+		<div>
+			<section class="contact">
+				<header>
+					<h3>Contato</h3>
+				</header>
+				<form id="form-contact" action="/api/contatos" method="post">
+  					<p>
+  						<label>Email 
+  							<input type="email" name="email"/>
+  						</label>
+  						<label>Mensagem
+  							<textarea name="mensagem"></textarea>
+  						</label>
+  						<button id="btn-form-contact">Enviar</button>
+  					</p>
+					</form>
+					<p class="message wait hide">Aguarde...</p>
+					<p class="message hide">Obrigado! Em preve responderei seu contato!</p>
+				</section>
+		</div>	
+
+ 			</section>
+ 			<footer>
+ 				&copy; front-end
+ 			</footer>
+		</div>
+	</body>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+	//document.queryselector("#form-contact")
+	$("#form-contact").submit(function(){
+
+		$("#btn-form-contact").addClass("hide");
+		$(".message.wait").removeClass("hide");
+
+		$.ajax({
+			url: '/api/contatos',
+			type: 'post',
+			datatype: 'json',
+			data: $("#form-contact").
+				serialize(),
+			success: function(data){
+				//alert(data);
+				$("#btn-form-contact").removeClass("hide");
+				$(".message.wait").addClass("hide");
+				$(".message.success").removeClass("hide");
+			},
+			error: function(data){
+				alert('error'+data);
+			}
+		})
+		alert('enviado form');
+		return false;
+	})
+</script>
+
+</html>
+

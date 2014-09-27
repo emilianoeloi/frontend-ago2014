@@ -1,0 +1,20 @@
+{
+  "name": "MyNodeJs",
+  "version": "0.0.1",
+  "description": "Front End",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Italo Goncalves",
+  "license": "BSD",
+  "keywords": [
+    "JSON",
+    "Node",
+    "JS"
+  ],
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.9.0"
+  }
+}

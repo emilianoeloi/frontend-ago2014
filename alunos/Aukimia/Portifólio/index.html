@@ -97,7 +97,9 @@
 				$(".message.success").removeClass("hide");
 			},
 			error: function(data){
-				$(".message.error")removeClass("hide");
+				$(".message.error").removeClass("hide");
+				$("#btn-form-contact").removeClass("hide");
+				$(".message.wait").addClass("hide");
 				alert('error'+data);
 			}
 		})
