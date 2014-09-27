@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-BR">
+		<meta charset="utf-8" />
+
+		<meta name="twitter:card" content="">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:image:src" content="">
+		<meta name="twitter:domain" content="">
+
+		<meta property="og:site_name" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:description" content=""/>
+
+		<meta property="og:type" content=""/>
+
+		<meta itemprop="name" content="" /> 
+		<meta itemprop="image" content="" />  
+		<meta itemprop="description" content="" />  
+		<meta name="description" content=""/>
+
+		<meta name="viewport" content="width=320"/>
+
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/fonts/stylesheet.css">
+
+		<title></title>
+	</head>
+	<body>
+		<div id="corpo">
+			
+				<header id="calc-logo">
+					<div id="calc-logo-box">
+						img
+					</div>
+				</header>
+				<section id="calc-vis">
+					<div id="calc-visor">
+						<p id="visor">0</p>
+					</div>
+				</section>
+				<section id="calc-buttons">
+					<!--<div class="calc-buts">
+						<p class="botaoValor">
+							7
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p class="botaoValor">
+							8
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p class="botaoValor">
+							9
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							4
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							5
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							6
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							1
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							2
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							3
+						</p>
+					</div>
+					<div class="calc-buts">
+						<p>
+							0
+						</p>
+					</div>
+					<div class="calc-buts operacoes">
+						<p>
+							+
+						</p>
+					</div>
+					<div class="calc-buts operacoes">
+						<p>
+							=
+						</p>
+					</div> -->
+
+				</section>
+				<section id="calc-buttons-oper">
+				</section>
+
+				<footer>
+
+				</footer>
+			
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+			
+			var calculadora={};
+			var numeros=[1,2,3];
+
+			calculadora.nomeAluno="Thiago Brumano";
+			calculadora.numeros=[1,2,3,4,5,6,7,8,9,0];
+			calculadora.operacoes=['+','-','*','/','='];
+
+
+			calculadora.obterValorVisor= function()
+			{
+				var visor = document.querySelector("#visor");
+				return visor.innerHTML;
+			}
+
+
+			calculadora.escreveNoVisor= function(valor)
+			{
+				var visor = document.querySelector("#visor");
+				visor.innerHTML = valor;
+			}
+
+			calculadora.primeiroValor = null;
+			calculadora.segundoValor = null;
+
+			calculadora.clicaEmNumero= function(numero)
+			{
+				var valorVisor = calculadora.obterValorVisor();
+
+				if (calculadora.clicouEmOperacao) 
+				{
+					calculadora.primeiroValor = parseFloat(valorVisor);
+					valorVisor = 0;
+					calculadora.clicouEmOperacao = false;
+				};
+
+
+				if (valorVisor=="0") 
+				{
+					valorVisor="";
+				};
+
+				var novoValor = valorVisor + numero;
+				calculadora.escreveNoVisor(novoValor);
+			}
+
+			calculadora.clicouEmOperacao = false;
+			calculadora.ultimaOperacao = "";
+			calculadora.clicarEmOperacao = function(operacao)
+			{
+				if (operacao == "=") {
+					calculadora.segundoValor = parseFloat(calculadora.obterValorVisor());
+					calculadora.calcular();
+				}
+				else
+				{
+					calculadora.clicouEmOperacao = true;
+					calculadora.ultimaOperacao = operacao;
+				}
+
+				calculadora.clicouEmOperacao = true;
+				calculadora.ultimaOperacao = operacao; 
+			}
+
+
+			calculadora.calcular = function()
+			{
+				switch(calculadora.ultimaOperacao) {
+
+					case "+":
+						resultado = calculadora.primeiroValor + calculadora.segundoValor;
+						
+						break;
+					case "-":
+						resultado = calculadora.primeiroValor - calculadora.segundoValor;
+						
+						break;
+					case "/":
+						resultado = calculadora.primeiroValor / calculadora.segundoValor;
+						
+						break;
+				}
+
+				alert(resultado);
+				calculadora.escreveNoVisor(resultado);
+			}
+
+			console.log('calculadora carregada');
+			console.log('aluno',calculadora.nomeAluno);
+			console.log('numeros',calculadora.numeros);
+			console.log('operacoes',calculadora.operacoes);
+
+
+		
+		window.onload = function()
+		{
+		
+			
+			var numeros = document.querySelector("#calc-buttons");
+
+			for (var i = 0; i < calculadora.numeros.length; i++) {
+
+				var novaTecla = document.createElement("div");
+				novaTecla.setAttribute("class","calc-buts");
+				novaTecla.innerHTML = "<p class='tecla' >"+calculadora.numeros[i]+"</p>";
+
+				novaTecla.addEventListener('click', function(event){
+					calculadora.clicaEmNumero(event.srcElement.innerHTML);
+
+				})
+
+				numeros.appendChild(novaTecla);
+
+
+				console.log('test '+calculadora.numeros[i]);
+			}
+
+
+			var operacoes = document.querySelector("#calc-buttons-oper");
+			for (var i = 0; i < calculadora.operacoes.length; i++) {
+				
+				var novaTecla = document.createElement("div");
+				novaTecla.setAttribute("class", "calc-buts operacoes");
+				novaTecla.innerHTML = "<p class='tecla' >"+calculadora.operacoes[i]+"</p>";
+
+				novaTecla.addEventListener('click', function(event){
+					calculadora.clicarEmOperacao(event.srcElement.innerHTML);
+
+				})
+
+
+
+
+				operacoes.appendChild(novaTecla);
+			}
+
+
+			/*
+		    var div = document.getElementById("calc-butsID");
+		    var y = document.getElementsByClassName("calc-butsClass");
+
+		    div.style.cursor = 'pointer';
+		    div.onmouseover = function()
+		    {
+		    	alert("Valor  outro "+document.getElementsByClassName("calc-butsClass")[0].innerHTML);
+
+		    };*/
+		}
+
+
+		/*var v1 = 3;
+		var v2 = 7;
+		var v3 = 'total';
+		var v4 = 'green';
+
+		switch(v4) 
+		{
+			case 'red':
+				alert('Vermelha');
+				break;
+			case 'green':
+				alert('verde');
+				break;
+			case 'blue':
+				alert('azul');
+				break;
+			default:
+				alert('Desconhecida');
+				break;			
+		}*/
+
+	</script>
+</html>
