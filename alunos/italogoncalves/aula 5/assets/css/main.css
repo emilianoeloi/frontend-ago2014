@@ -1,0 +1,24 @@
+*, html{
+	margin: 5;
+	padding: 0;
+	font-family: Segoe UI;
+	font-size: 1em;
+}
+
+p{
+	padding: 10px;
+}
+
+.lista{
+	padding-left: 30px;
+
+}
+
+.itens{
+	padding-left: 5px;
+
+}
+
+h1{
+	color: orange;
+}

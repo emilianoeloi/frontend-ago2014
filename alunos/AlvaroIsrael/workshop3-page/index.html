@@ -26,204 +26,218 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/cssMain.css">
 
   <style rel="stylesheet" type="text/css">
-    #content {
-      height: 1080px;
-      background-color: #3C3C3C;
-    }
+  #content {
+    height: 1080px;
+    background-color: #3C3C3C;
+  }
 
-    .left-panel {
-      width: 280px;
-      height: 1080px;
-      background-color: #3C3C3C;
-    }
+  .left-panel {
+    width: 280px;
+    height: 1080px;
+    background-color: #3C3C3C;
+  }
 
-    .right-panel {
-      margin-left: 40px;
-      margin-top: 30px;
-      background-color: #3C3C3C;
-      left: 280px;
-      position: absolute;
-      top: 8px;
+  .right-panel {
+    margin-left: 40px;
+    margin-top: 30px;
+    background-color: #3C3C3C;
+    left: 280px;
+    position: absolute;
+    top: 8px;
 
-    }
+  }
 
-    .logo {
-      max-height: 265px;
-    }
+  .logo {
+    max-height: 265px;
+  }
 
-    .icon {
-      width: 80px;
-      margin: 30px auto;
-    }
+  .icon {
+    width: 80px;
+    margin: 30px auto;
+  }
 
-    #alvaro {
-      width: 100%;
-      margin: 10px 60px !important;
-    }
+  #alvaro {
+    width: 100%;
+    margin: 10px 60px !important;
+  }
 
-    .cinza {
-      color: lightgray
-    }
+  .cinza {
+    color: lightgray
+  }
 
-    .cinza-dark {
-      color: dimgray;
-    }
-    #texto{
-      width: 600px;
-    }
-  </style>
+  .cinza-dark {
+    color: dimgray;
+  }
 
-  <style type="text/css" rel="stylesheet">
+  .green{
+   color: lightgreen; 
+ }
 
-    h1 {
-      color: #b48608;
-      font-family: 'Droid serif', serif;
-      font-size: 36px;
-      font-weight: 400;
-      font-style: italic;
-      line-height: 44px;
-      margin: 0 0 12px;
-      text-align: center;
-    }
+ .orange{
+   color: orange; 
+ }
 
-    p {
-      text-align: center;
-      color: #eee;
-      font-family: 'Droid Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 24px;
-      margin: 0 0 14px;
-      padding: 10px;
-    }
+ #texto{
+  width: 600px;
+}
+</style>
 
-    h2 {
-      color: #eee;
-      font-family: 'Droid Sans', sans-serif;
-      font-weight: 400;
-      line-height: 24px;
-      margin: 0 0 14px;
-    }
+<style type="text/css" rel="stylesheet">
 
-    .date {
-      border-top: 1px solid #fff;
-      position: relative;
-      top: 20px;
-      margin-bottom: 30px;
-    }
+td {
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+}
 
-    .date span {
-      color: #000;
-      text-decoration: none;
-      font-style: italic;
-      font-size: 13px;
-      text-align: center;
-      padding: 2px 5px;
-      background: #fff;
-      width: 120px;
-      margin: 0 auto;
-      display: block;
-      position: relative;
-      top: -10px;
-      font-family: "Droid serif", serif;
-    }
+h1 {
+  color: #b48608;
+  font-family: 'Droid serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: left;
+}
 
-    a.btn:hover {
-      color: #000;
-      background: #fff;
-    }
+p {
+  text-align: center;
+  color: #eee;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 14px;
+  padding: 10px;
+}
 
-    .left {
-      float: left;
-      margin: 0 5% 30px 0;
-      width: 30%;
-    }
+h2 {
+  color: #eee;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 14px;
+}
 
-    .right {
-      float: right;
-      margin: 0 0 30px 0;
-      width: 30%;
-    }
+.date {
+  border-top: 1px solid #fff;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+}
 
-    .center {
-      margin: 0 auto;
-      width: 100%;
-    }
+.date span {
+  color: #000;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  padding: 2px 5px;
+  background: #fff;
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -10px;
+  font-family: "Droid serif", serif;
+}
 
-    .clear {
-      clear: both;
-    }
-  </style>
+a.btn:hover {
+  color: #000;
+  background: #fff;
+}
 
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+.left {
+  float: left;
+  margin: 0 5% 30px 0;
+  width: 30%;
+}
+
+.right {
+  float: right;
+  margin: 0 0 30px 0;
+  width: 30%;
+}
+
+.center {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+</style>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
-<div id="content">
+  <div id="content">
 
-  <div id="left-column" class="left-panel">
-    &nbsp;
+    <div id="left-column" class="left-panel">
+      &nbsp;
 
-    <img class="logo" src="./assets/img/github-icon.png">
+      <img class="logo" src="./assets/img/github-icon.png">
 
-    <div id="alvaro"><h2>{Álvaro Israel}</h2></div>
+      <div id="alvaro"><h2>{Álvaro Israel}</h2></div>
 
-    <div id="left-text"><p> Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-      divoltis porris, paradis.
-      Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é
-      amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
-      pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p></div>
+      <div id="left-text"><p> Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
+        divoltis porris, paradis.
+        Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é
+        amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i
+        pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p></div>
 
-    <div class="icon"><img src="./assets/img/facebook.png"></div>
-  </div>
+        <div class="icon"><img src="./assets/img/facebook.png"></div>
+      </div>
 
-  <div id="right-column" class="right-panel">
-    <h1>Devweb - front-end</h1>
+      <div id="right-column" class="right-panel">
+        <h1>Devweb - front-end</h1>
 
-    <div  id="texto"><p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
-      Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é
-      amistosis quis leo.
-      Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
-      Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-    </p></div>
+        <div  id="texto"><p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+          Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é
+          amistosis quis leo.
+          Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
+          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+        </p></div>
 
-    <h2>Para estudar</h2>
+        <h2>Para estudar</h2>
 
-    <table>
-      <tbody>
-      <tr>
-        <td id="recorte" class="cinza-dark">RECORTE <a></a></td>
-      </tr>
-      <tr>
-        <td>Photoshop: o companheiro inseparavel</td>
-      </tr>
-      <tr>
-        <td id="html5" class="cinza-dark">HTML5<a class="cinza"> [CONTEÚDO]</a></td>
-      </tr>
-      <tr>
-        <td>Novas tags e recursos para produzir páginas web</td>
-      </tr>
-      <tr>
-        <td id="css3" class="cinza-dark">CSS3<a class="cinza"> [FORMATAÇÃO]</a></td>
-      </tr>
-      <tr>
-        <td>Diminuindo o trabalho do javascript com layout</td>
-      </tr>
-      <tr>
-        <td id="javascript" class="cinza-dark">JAVASCRIPT<a class="cinza"> [PROGRAMAÇÃO]</a></td>
-      </tr>
-      <tr>
-        <td>Linguagem fundamental e soberana dos navegadores web</td>
-      </tr>
-      </tbody>
-    </table>
+        <table>
+          <tbody>
+            <tr>
+              <td id="recorte" class="cinza-dark">RECORTE <a></a></td>
+            </tr>
+            <tr>
+              <td><img src="./assets/img/star-icon.png">  Photoshop: o companheiro inseparavel</td>
+            </tr>
+            <tr>
+              <td id="html5" class="cinza-dark">HTML5<a class="cinza green"> [CONTEÚDO]</a></td>
+            </tr>
+            <tr>
+              <td>Novas tags e recursos para produzir páginas web</td>
+            </tr>
+            <tr>
+              <td id="css3" class="cinza-dark">CSS3<a class="cinza orange"> [FORMATAÇÃO]</a></td>
+            </tr>
+            <tr>
+              <td>Diminuindo o trabalho do javascript com layout</td>
+            </tr>
+            <tr>
+              <td id="javascript" class="cinza-dark">JAVASCRIPT<a class="cinza green"> [PROGRAMAÇÃO]</a></td>
+            </tr>
+            <tr>
+              <td>Linguagem fundamental e soberana dos navegadores web</td>
+            </tr>
+          </tbody>
+        </table>
 
-  </div>
+      </div>
 
 
-</div>
+    </div>
 
-</body>
-</html>
+  </body>
+  </html>

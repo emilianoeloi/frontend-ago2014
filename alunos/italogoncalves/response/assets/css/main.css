@@ -1,0 +1,83 @@
+*, html{
+	margin: 0;
+	padding: 0;
+}
+
+.div1{
+	float: left;
+	background: #38c8fe;
+	width: 18.36734694%;
+	height: 100px;
+	margin-right: 2.040816327%;
+	margin-bottom: 2.040816327%;
+}
+
+.div2{
+	float: left;
+	background: #ffaf47;
+	width: 79.59183673%;
+	height: 100px;
+	margin-bottom: 2.040816327%;
+}
+
+.div3{
+	background: #ff7747;
+	width: 100%;
+	height: 300px;
+	margin-right: 2.040816327%;
+	margin-bottom: 2.040816327%;
+	clear: both;
+}
+
+.div45{
+	float: left;
+	background: #ffd647;
+	width: 31.93877551%;
+	height: 300px;
+	margin-right: 2.040816327%;
+	margin-bottom: 2.040816327%;
+}
+
+.div6{
+	float: left;
+	background: #ffd647;
+	width: 31.93877551%;
+	height: 300px;
+	margin-bottom: 2.040816327%;
+}
+
+.div7{
+	clear: both;
+	float: left;
+	background: #fdc1ff;
+	width: 100%;
+	height: 100px;
+	margin-right: 2.040816327%;
+	margin-bottom: 2.040816327%;
+}
+
+@media screen and (max-width: 1128px){
+
+}
+
+@media screen and (max-width: 768px){
+	
+}
+
+@media screen and (max-width: 718px){
+	
+}
+
+@media screen and (max-width: 640px){
+	
+}
+
+@media screen and (max-width: 520px){
+	.div45{
+		width: 47.961%;
+	}
+	.div6{
+		clear: both;
+		float: none;
+		width: 100%;
+}
