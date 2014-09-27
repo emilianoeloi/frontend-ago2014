@@ -28,3 +28,19 @@ h1{
 	width: 100px;
 	background: red;
 }
+
+.form{
+	position: relative;
+	height: 200px;
+	width: 300px;
+	left: 70%;
+	background: green;
+}
+
+.message{
+	color: red;
+}
+
+.hide{
+	display: none;
+}

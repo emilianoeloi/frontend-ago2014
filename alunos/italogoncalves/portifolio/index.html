@@ -25,6 +25,24 @@
 					<li class="itens">Meditar</li>
 					<li class="itens">Pedalar</li>
 				</ul>	
+				<section class="form">
+					<header>
+						<h3>Contato</h3>
+						<form id="form-contact" action="/api/contatos" method="post">
+							<p>
+								<label>E-mail:
+									<input type="email" name="email">
+								</label>
+								<label>Mensagem:
+									<textarea name="msg"></textarea>
+								</label>	
+								<button id="btn-form-contact">Enviar</button>
+							</p>
+						</form>
+						<p class="message wait hide">Aguarde...</p>
+						<p class="message sucess hide">Em breve recebera o retorno</p>
+					</header>
+				</section>
 				<div class="caixa1">
 				</div>
 				<div class="caixa2">
@@ -37,4 +55,26 @@
 			</footer>	
 		</div>	
 	</body>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$("#form-contact").submit(function(){
+			$("#btn-form-contact").addClass("hide");
+			$(".message.wait").removeClass("hide");
+			$.ajax({
+				url: '/api/contatos',
+				type: 'post',
+				dataType: 'json',
+				data: $("#form-contact").serialize(),
+				sucess: function(data){
+					$("#btn-form-contact").removeClass("hide");
+					$(".message.wait").addClass("hide");
+					$(".message.sucess").removeClass("hide");
+				},
+				error: function(data){
+					alert('error'+data);
+				}
+			});
+			return false;
+		})
+	</script>
 </html>
