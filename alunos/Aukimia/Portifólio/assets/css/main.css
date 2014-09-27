@@ -6,22 +6,23 @@
 	font-size: 1em;
 }
 /*Estilos*/
-body {background: url()}
+body {background: pink url()}
 h1 {color:orange; font-family: 'Lobster', cursive;}
 h2 {color: blue; margin:10px 5px;}
 h3 {margin: 10px}
 .nome {color:blue;}
-#container {border: 1px solid #b90000; width: 990px; padding: 20px; display: block;}
-#foto {padding: 5px; border: 1px dotted red; margin:0 auto; width: 256px;}
-.caixa {width: 100px; height: 100px; background-color: #ccc; margin:10px;}
-.red {background-color: red;}
-.green {background-color: green;}
-.blue {background-color: blue;}
+#container {width: 990px; background-color: #f1f1f1;}
+#main {border: 1px solid #b90000; width: 70%; padding: 20px; display: block;}
+#foto {padding: 5px; border: 1px dotted red; margin:0 auto; width: auto; float: right;}
 li a {margin-left: 10px; border: 1px dotted black;}
 .numero {border: 1px dotted blue;
 margin: 10px 5px 30px 40px;
 padding: 20px}
+.mail1 {margin: 20px}
+.mail2 {margin: 20px}
+.contact {border: 1px solid #ccc; width: 500px;}
+.message {color:black;}
+.hide {display: none;}
 
-dl {margin:40px; border: 1px dotted blue; padding:20px; width:400px;}
-dt {padding-left:30px;}
-dd {padding-left:40px;}
+footer {margin-top: 40px;
+}
