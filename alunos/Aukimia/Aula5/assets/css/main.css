@@ -1,0 +1,71 @@
+@media screen and (max-width: 1128px){}
+
+@media screen and (max-width: 768px){}
+
+@media screen and (max-width: 718px){}
+
+@media screen and (max-width: 640px){}
+
+@media screen and (max-width: 520px){
+	.box1{
+		color: red;
+	}
+}
+
+.box1 {
+	background-color: #38c8fe;
+	float: left;
+	width: 18.37%;
+	height: 100px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	}
+.box2 {
+	background-color: #ffaf47;
+	float: left;
+	width: 79.6%;
+	height: 100px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.box3 {
+	background-color: #ff7747; 
+	width: 100%;
+	height: 300px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.box4 {
+	background-color: #ffd647; float: left;
+	width: 31%;
+	height: 300px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.box5 {
+	background-color: #ffd647; float: left;
+	width: 31%;
+	height: 300px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.box6 {
+	background-color: #ffd647; float: left;
+	width: 31%;
+	height: 300px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.box7 {
+	background-color: #fdc1ff;
+	width: 100%;
+	height: 100px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+@media screen and (max-width: 320px){
+	.box1{
+		background-color: red;
+	}
+}
