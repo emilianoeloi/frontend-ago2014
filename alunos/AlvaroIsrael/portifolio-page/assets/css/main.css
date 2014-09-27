@@ -14,10 +14,11 @@
 
 #avatar {
   display: block;
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: auto;
   max-height: 256px;
   max-width: 256px;
+  margin-bottom: 10px;
 }
 
 .port-body {
@@ -36,10 +37,14 @@
 
 .titulo {
   background-color: darkgray;
+  height: 50px;
+  margin-bottom: 10px;
+  
 }
 
 .topicos {
   margin: 0 5px 15px;
+  padding: 0;
   border: 1px solid darkgray;
 }
 
@@ -63,4 +68,5 @@
 
 .caixas {
   margin-bottom: 10px;
+  background-image: linear-gradient(to bottom, #FF0037 0%, #1CFF3A 100%, #3842FF 100%);
 }
