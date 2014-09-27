@@ -55,3 +55,29 @@
 	margin-right: 2.040816327%;
 	margin-bottom: 2.040816327%;
 }
+
+@media screen and (max-width: 1128px){
+
+}
+
+@media screen and (max-width: 768px){
+	
+}
+
+@media screen and (max-width: 718px){
+	
+}
+
+@media screen and (max-width: 640px){
+	
+}
+
+@media screen and (max-width: 520px){
+	.div45{
+		width: 47.961%;
+	}
+	.div6{
+		clear: both;
+		float: none;
+		width: 100%;
+}
