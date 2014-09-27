@@ -53,3 +53,240 @@
     clear: both;
     float: left;
 }
+@media screen and (max-width: 1128px){
+
+.caixa1{
+    width:  18.36%; /*980/180*/
+    height: 100px;
+    margin-right: 2.04%; /*980/20*/
+    margin-bottom: 20px;
+    background-color: #38C8FE;
+    float: left; 
+
+}
+.caixa2{
+    width:  79.59%; /*980/780*/
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FFAF47;
+    float: left; 
+}
+.caixa3{
+    width:  100%; /*980/980*/
+    height: 300px;
+    margin-bottom: 2.04%; /*980/20*/
+    background-color: #FF7747;
+     float: left; 
+}
+.caixa4{
+    width:  31.94%; /*980/313*/
+    height: 300px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    clear: both;
+    float: left; 
+}
+.caixa5{
+    width:  31.94%; /*980/313*/
+    height: 300px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    float: left;   
+}
+.caixa6{
+    width:  31.94%; /*980/313*/
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    float: left;   
+}
+.caixa7{
+    width:  100%; /*980/980*/
+    height: 100px;
+    background-color: #FDC1FF;
+    clear: both;
+    float: left;
+}
+}
+@media screen and (max-width: 768px){
+
+.caixa1{
+    width:  18.36%; /*980/180*/
+    height: 100px;
+    margin-right: 2.04%; /*980/20*/
+    margin-bottom: 20px;
+    background-color: #38C8FE;
+    float: left; 
+
+}
+.caixa2{
+    width: 79.59%; /*980/780*/
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FFAF47;
+    float: left; 
+}
+.caixa3{
+    width:  100%; /*980/980*/
+    height: 300px;
+    margin-bottom: 2.04%; /*980/20*/
+    background-color: #FF7747;
+    float: left; 
+}
+.caixa4{
+    width:  31.94%; /*980/313*/
+    height: 300px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    clear: both;
+    float: left; 
+}
+.caixa5{
+    width:  31.94%; /*980/313*/
+    height: 300px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    float: left;   
+}
+.caixa6{
+    width:  31.94%; /*980/313*/
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    float: left;   
+}
+.caixa7{
+    width:  100%; /*980/980*/
+    height: 100px;
+    background-color: #FDC1FF;
+    clear: both;
+    float: left;
+}
+
+}
+
+@media screen and (max-width: 520px){
+
+.caixa1{
+    width:  100%; /*980/180*/
+    height: 100px;
+    margin-right: 2.04%; /*980/20*/
+    margin-bottom: 20px;
+    background-color: #38C8FE;
+    float: left; 
+
+}
+.caixa2{
+    width: 100%; /*980/780*/
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FFAF47;
+    clear: both;
+    float: left; 
+}
+.caixa3{
+    width:  100%; /*980/980*/
+    height: 300px;
+    margin-bottom: 2.04%; /*980/20*/
+    background-color: #FF7747;
+     float: left; 
+}
+.caixa4{
+    width:  47.99%; /*980/313*/
+    height: 300px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    clear: both;
+    float: left; 
+}
+.caixa5{
+    width:  47.94%; /*980/313*/
+    height: 300px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    float: left;   
+}
+.caixa6{
+    width:  100%; /*980/313*/
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FFD647;
+      clear: both;
+    float: left;
+  
+}
+.caixa7{
+    width:  100%; /*980/980*/
+    height: 100px;
+    background-color: #FDC1FF;
+    clear: both;
+    float: left;
+}
+}
+@media screen and (max-width: 300px){
+
+.caixa1{
+    width:  100%; /*980/180*/
+    height: 100px;
+    margin-right: 2.04%; /*980/20*/
+    margin-bottom: 20px;
+    background-color: #38C8FE;
+    float: left; 
+
+}
+.caixa2{
+    width: 100%; /*980/780*/
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FFAF47;
+    clear: both;
+    float: left; 
+}
+.caixa3{
+    width:  100%; /*980/980*/
+    height: 300px;
+    margin-bottom: 2.04%; /*980/20*/
+    background-color: #FF7747;
+    float: left; 
+}
+.caixa4{
+    width:  100%; /*980/313*/
+    height: 100px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+
+}
+.caixa5{
+    width:  100%; /*980/313*/
+    height: 100px;
+    margin-right: 2.04%; /*980/313*/
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    clear: both;
+    float: left;
+}
+.caixa6{
+    width:  100%; /*980/313*/
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FFD647;
+    clear: both;
+    float: left;
+  
+}
+.caixa7{
+    width:  100%; /*980/980*/
+    height: 100px;
+    background-color: #FDC1FF;
+    clear: both;
+    float: left;
+}
+
+}
