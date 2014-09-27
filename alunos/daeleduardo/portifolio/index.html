@@ -98,6 +98,22 @@
 
 		</div>
 
+		<form id="contactForm" name="contactForm" method="post" action="/api/contatos/">
+
+			E-mail:<input type="textbox" />
+
+			<br/>
+
+			Mensagem:<textarea rows="4" cols="50">
+
+			</textarea>
+
+			<button id="btnSubmit">Submeter</button>
+
+		</form>
+
+		<p id="hiddenFeedback" > Mensagem enviada com sucesso!</p>
+
 		<!--div id="box" class="box">
 		</div>
 		<div id="box1" class="box1">
@@ -108,5 +124,37 @@
 		
 
 	</body>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script >
+		// document.querySelector("#ContactForm");
+		/*dEventListerner*/
+		$("#contactForm").submit(function() {
+		 		alert("Enviando Form");
+		 		$("#btnSubmit").addClass("hide");
+		 		$("#hiddenFeedback").removeClass("hide"); 
+		 		$.ajax({
+
+		 			url:'/api/contatos/',
+		 			type:'post',
+		 			dataType:'json',
+		 			data:$('#contactForm').serialize(),
+		 			sucess:function(data){alert(data);},
+		 			error:function(data){alert('error'+data);}
+
+		 			});
+
+		 	return false; 	
+
+		});
+
+	</script>
+
+
+
 </html>
+
+
 

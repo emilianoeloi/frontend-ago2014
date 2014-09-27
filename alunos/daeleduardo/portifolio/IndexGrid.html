@@ -1,0 +1,85 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+
+	<head>
+
+		<title>Daniel Eduardo Durães Aguiar</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link href="./assets/css/home.css" rel="stylesheet" type="text/css" /> 
+
+		
+
+		<script language="javascript" type="text/javascript">
+
+			var imprimirNome  = function (){
+
+				alert(1);
+
+			}
+
+
+		</script>		
+	
+	</head>
+
+
+	<body>
+
+
+		<div id="boxBlue" class="boxBlue">
+		</div>
+		<div id="boxOrange" class="boxOrange">
+		</div>
+		<div id="boxRed" class="boxRed">
+		</div>		
+		<div id="boxGold" class="boxGold">
+		</div>
+		<div id="boxGold" class="boxGold">
+		</div>
+		<div id="boxGold" class="boxGold">
+		</div>				
+		<div id="boxPink" class="boxPink">
+		</div>	
+		
+
+	</body>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script >
+		// document.querySelector("#ContactForm");
+		/*dEventListerner*/
+		$("#contactForm").submit(function() {
+		 		alert("Enviando Form");
+		 		$("#btnSubmit").addClass("hide");
+		 		$("#hiddenFeedback").removeClass("hide"); 
+		 		$.ajax({
+
+		 			url:'/api/contatos/',
+		 			type:'post',
+		 			dataType:'json',
+		 			data:$('#contactForm').serialize(),
+		 			sucess:function(data){alert(data);},
+		 			error:function(data){alert('error'+data);}
+
+		 			});
+
+		 	return false; 	
+
+		});
+
+	</script>
+
+
+
+</html>
+
+
+
