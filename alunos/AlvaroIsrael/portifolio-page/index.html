@@ -7,89 +7,172 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <style rel="stylesheet" type="text/css">
+
+  label{
+    margin: 0;
+    padding: 0;
+  }
+  .formulario{
+    padding: 5px;
+    height: 256px;
+    width: 256px;
+    position: relative;
+    float: right;
+    top: -286px;
+    left: -35px;
+    /*background-color: blue;*/
+  }
+  #mail{
+    width: 250px;
+  }
+
+  #msg{
+    width: 250px;
+  }
+
+  dl{
+    margin-top: 0;
+  }
+
+  .message{
+    margin-top: 0;
+    border: 1px solid gray;
+    background-color: darkgray;
+    top: -10px;
+    text-align: center;
+    color: darkgreen;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .vermelho{
+    color: red;
+  }
+
+  #footer{
+    background-color: darkgray;
+    text-align: right;
+    margin-left: 0px;
+    width: 600px;
+    font-weight: bold;
+  }
+
+  .retorno{
+    position: relative;
+    float: right;
+    top: -130px;
+    left: 34px;
+  }
+
+  </style>
+
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
 
-  <div class="port-body">
-    <div class="titulo">
-      <header><h1>Alvaro Israel</h1></header>
-    </div>
-
-    <section>
-      <!--Imagem - Tamanho 256px-->
-      <div class="image">
-        <img id="avatar" src="./assets/img/me.png" alt="alvaro israel nunes leite">
-      </div>
-      <!--Mini Currículo-->
-      <div class="topicos">
-        <dl>
-          <dt class="negrito">Objetivo:</dt>
-          <dd>Apresentar de forma breve meus objetivos a respeito do curso de extencao da faculdade UNA.</dd>
-        </dl>
+    <div class="port-body">
+      <div class="titulo">
+        <header><h1>Alvaro Israel</h1></header>
       </div>
 
-      <div class="topicos">
-        <dl>
-          <dt class="negrito">Educação:</dt>
-          <dd>Bacharel em Ciência da Computação - Universidade FUMEC</dd>
-        </dl>
-      </div>
-
-      <div class="topicos">
-        <dl>
-          <dt class="negrito">Competências:</dt>
-          <dd>
-            <ul class="lista-competencias">
-              <li>Trabalho em equipe</li>
-              <li>Comunicação</li>
-              <li>Facilidade de aprendizado</li>
-            </ul>
-          </dd>
-        </dl>
-      </div>
-
-      <div class="topicos">
-        <dl>
-          <dt class="negrito">Experiência:</dt>
-          <dd>
-            <p>Tabalha a 7 anos como analista de planejamento e com projetos de BI corporativos.</p>
-          </dd>
-        </dl>
-      </div>
-
-      <!--Coisas que curto, hobbies-->
-      <div class="topicos">
-
-        <dl>
-          <dt class="negrito">Hobbies:</dt>
-          <dd>
-            <ul class="lista-hobbies">
-              <li>Seriados de TV</li>
-              <li>Animes</li>
-              <li>Programar</li>
-            </ul>
-          </dd>
-        </dl>
-
-        <div id="caixas">
-          <div class="caixa red">
-          </div>
-
-          <div class="caixa green">
-          </div>
-
-          <div class="caixa blue">
-          </div>
+      <section>
+        <!--Imagem - Tamanho 256px-->
+        <div class="image">
+          <img id="avatar" alt="It's me!" src="./assets/img/me.png" alt="alvaro israel nunes leite">
         </div>
 
-        <div class="titulo">
-          <footer>
-            <p>Álvaro Israel Nunes Leite - Copyright &copy; 2014</p>
-          </footer>
+        <div class="formulario">
+          <section class="contact">
+            <header><h3>Contato</h3></header>
+            <form id="form-contact" action="/api/contatos" method="post">
+              <p>
+                <label>
+                  E-Mail:<br>
+                  <input id="mail" class="form-control" placeholder="..." name="email" type="email"><br>
+                </label>
+                <label>
+                  Mensagem:<br>
+                  <textarea id="msg" class="form-control" rows="4" cols="19" name="mensagem"></textarea><br>
+                </label>
+
+                <button id="btn-form-contact" class="btn btn-default" type="submit">Enviar</button>
+              </p>
+            </form>
+            <div class="retorno"><p id="enviado" class="message wait hide">Aguarde...</p></div>
+            <div class="retorno"><p class="message hide">Obrigado!<br>Em breve responderei sua mensagem!</p></div>
+            <div class="retorno"><p class="message erro hide vermelho">ERRO!<br>WIPE...</p></div>
+          </section>
         </div>
 
+        <!--Mini Currículo-->
+        <div class="topicos">
+          <dl>
+            <dt class="negrito">Objetivo:</dt>
+            <dd>Apresentar de forma breve meus objetivos a respeito do curso de extencao da faculdade UNA.</dd>
+          </dl>
+        </div>
+
+        <div class="topicos">
+          <dl>
+            <dt class="negrito">Educação:</dt>
+            <dd>Bacharel em Ciência da Computação - Universidade FUMEC</dd>
+          </dl>
+        </div>
+
+        <div class="topicos">
+          <dl>
+            <dt class="negrito">Competências:</dt>
+            <dd>
+              <ul class="lista-competencias">
+                <li>Trabalho em equipe</li>
+                <li>Comunicação</li>
+                <li>Facilidade de aprendizado</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="topicos">
+          <dl>
+            <dt class="negrito">Experiência:</dt>
+            <dd>
+              <p>Tabalha a 7 anos como analista de planejamento e com projetos de BI corporativos.</p>
+            </dd>
+          </dl>
+        </div>
+
+        <!--Coisas que curto, hobbies-->
+        <div class="topicos">
+
+          <dl>
+            <dt class="negrito">Hobbies:</dt>
+            <dd>
+              <ul class="lista-hobbies">
+                <li>Seriados de TV</li>
+                <li>Animes</li>
+                <li>Programar</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <div id="footer" class="topicos">
+          <div class="titulo">
+            <footer>
+              <p>Álvaro Israel Nunes Leite - Copyright &copy; 2014</p>
+            </footer>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -97,3 +180,42 @@
 </div>
 </body>
 </html>
+
+<script src="./assets/js/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+
+/*Em javascript roots: */
+/*document.querySelector('#form-contact');*/
+/*document.addEventListener(click, function(doSomething));*/
+
+/*Em jQuery */
+$('#form-contact').submit(function(){
+  $('#btn-form-contact').addClass('hide');
+
+  $('#enviado').removeClass('hide');
+
+  $.ajax({
+    url:'/api/contatos',
+    type: 'post',
+    dataType: 'json',
+    data: $('#form-contact').serialize(), /*Serializa os dados do formulario.*/
+    success: function(data){
+      alert(data);
+      $('#btn-form-contact').removeClass('hide');
+      $('.message').removeClass('hide');
+      $('.erro').addClass('hide');
+      $('#enviado').addClass('hide');
+    },
+    error: function(data) {
+      alert('Error' + data);
+      $('#btn-form-contact').removeClass('hide');
+      $('.erro').removeClass('hide');
+      $('#enviado').addClass('hide');
+    }
+  });
+
+  return false; /*Forja um retorno falso para o navegador de modo a impedir o refresh da pagina.*/
+})
+
+</script>

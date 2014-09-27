@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<section class="form">
+	<header>
+		<h3>Contato</h3>
+		<form id="form-contact" action="/api/contatos" method="post">
+			<div class="form-group">
+				<label>E-mail:
+					<input type="email" name="email" class="form-control">
+				</label>
+				<label>Mensagem:
+					<textarea name="msg" class="form-control"></textarea>
+				</label>	
+				<button id="btn-form-contact" class="btn">Enviar</button>
+			</div>
+		</form>
+		<p class="message wait hide">Aguarde...</p>
+		<p class="message sucess hide">Em breve recebera o retorno</p>
+	</header>
+</section>
+
+</body>
+</html>
+
